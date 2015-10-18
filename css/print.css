@@ -1,0 +1,81 @@
+/*
+ReferenceWizard theme for the GetSimple CMS
+Designed by Kenneth John odle
+http://d12webdesign.com/
+*/
+
+/* Print stylesheet */
+
+
+#sa_toolbar,
+#sidebar,
+#sidebar2,
+#share-bottom,
+#share-top,
+#nav,
+#footer,
+.noprint,
+#child_menu,
+.breadcrumb
+{
+	display: none;
+}
+
+* {
+	font-family: Tahoma,sans-serif;
+	color: #000;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {border: none; text-decoration: none;}
+
+p, ul, ol, li, a, dt, dd, pre, input, label {font-size: 10pt;}
+h1 {font-size: 18pt; border-bottom: double 3pt #bbb;}
+h2 {font-size: 15pt; border-bottom: single 2pt #ccc;}
+h3 {border-bottom: single 1pt #ddd;}
+
+h1,h1 a,h2,h3,h4,h5,h6 {font-family: serif;}
+
+dt {font-weight: bold;}
+
+pre {
+	font-family: monospace;
+	margin: 6pt 0;
+	padding: 6pt 0;
+	border-top: dotted 2px #ccc;
+	border-bottom: dotted 2px #ccc;
+}
+
+#content {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+table {border: none;}
+td {
+	border: none;
+	padding: 6pt 0;
+	margin: 6pt 0;
+	border-bottom: solid 1pt #000;
+}
+
+blockquote {
+	border: groove 2pt #000;
+	padding: 3pt;
+	font-size: 10pt;
+}
+
+.nodisplaybox {
+	border: dotted 2pt #ccc;
+	padding: 6pt;
+	margin-bottom: 6pt;
+}
+.nodisplaybox p {
+	margin: 2pt 0 0 0;
+	font-size: 8pt;
+}
+

@@ -1,0 +1,345 @@
+/*
+NeonFossa theme for the GetSimple CMS
+Designed by Kenneth John odle
+http://d12webdesign.com/
+*/
+
+/* Resets and clearfixes */
+
+* {
+	margin: 0px;
+	padding: 0px;
+	color: #000;
+}
+.clear {
+	clear:both;
+}
+
+
+/* HTML Components */
+
+body {
+	background: #eee;
+	color: #000;
+	font: 13px/18px tahoma,sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #000;
+	margin: 15px 0 10px 0;
+	font-family: Galdeano,sans-serif;
+	border-bottom: solid 1px #ccc;
+	padding: 0 0 0 3px;
+}
+h1 {padding-bottom: 6px;}
+h2 {padding-bottom: 5px;}
+h3 {padding-bottom: 2px;}
+h4 {padding-bottom: 1px;}
+h5 {padding-bottom: 0;}
+h6 {padding-bottom: 0;}
+h1#page-title {
+	background: #eee;
+	border-bottom: double 3px #ddd;
+	padding: 9px 0 6px 3px;
+}
+
+ol, ul {
+	margin-left: 18px;
+}
+
+p {
+	margin-top: 10px;
+}
+p.meta {
+	text-align: right;
+}
+
+a {
+	color: #444;
+	text-decoration: none;
+}
+
+blockquote {
+	background: #ddd;
+	padding: 12px;
+	margin: 18px;
+	box-shadow: 5px 5px 5px #bbd;
+	font-style: italic;
+	min-height: 35px;
+}
+blockquote::first-letter {
+	display: block;
+	float: left;
+	font-family: serif;
+	font-size: 3em;
+	font-weight: bold;
+	font-style: italic;
+}
+
+pre {
+	margin: 12px 0;
+	background: #eee;
+	border: dotted 1px #ddd;
+	padding: 12px;
+}
+
+dt {
+	font-weight: bold;
+	margin: 6px 0 0 0;
+}
+dd {
+	margin-left: 20px;
+	border-left: solid 3px #ddd;
+	padding-left: 6px;
+}
+
+/* Tables */
+
+td {
+	padding: 12px;
+	font-size: 18px;
+}
+
+/***************************/
+/* Theme Components */
+
+/* Container */
+
+#container {
+	width: 1000px;
+	margin: 0px auto;
+	background: #fff url(container-background.png);
+	box-shadow: 0 0 15px #222;
+}
+
+/* Header */
+
+#header {
+	padding: 20px;
+	border: solid 5px #eee;
+	height: 110px;
+	background: #fff;
+	background-image: url('../images/background.png');
+}
+#header a {color: #000;}
+#header h1,
+#header h2 {
+	color: #222;
+	background: none;
+	margin-top: 0;
+	border: none;
+	padding-left: 24px;
+}
+#header h1 {
+	font-size: 40px;
+	line-height: 38px;
+}
+#header h2 {
+	font-size: 30px;
+	line-height: 20px;
+}
+
+/* Navigation Bar */
+
+#nav {
+	background: #08b2f5; /* Support older browsers */
+	border-top: solid 2px #0F709E;
+	border-bottom: solid 2px #0F709E;
+	padding: 2px 0;
+	font-size: 1.1em;
+	font-weight: bold;
+	/* Background image code from the CSS Gradient Generator @ http://www.css3factory.com/linear-gradients/ */
+background-image: -webkit-gradient(
+	linear,
+	left top,
+	left bottom,
+	color-stop(0, #04A6C7),
+	color-stop(0.24, #08B2F5),
+	color-stop(1, #00344A)
+);
+background-image: -o-linear-gradient(bottom, #04A6C7 0%, #08B2F5 24%, #00344A 100%);
+background-image: -moz-linear-gradient(bottom, #04A6C7 0%, #08B2F5 24%, #00344A 100%);
+background-image: -webkit-linear-gradient(bottom, #04A6C7 0%, #08B2F5 24%, #00344A 100%);
+background-image: -ms-linear-gradient(bottom, #04A6C7 0%, #08B2F5 24%, #00344A 100%);
+background-image: linear-gradient(to bottom, #04A6C7 0%, #08B2F5 24%, #00344A 100%);
+}
+#nav ul {
+	margin-left: 0px;
+}
+#nav li {
+	display: block;
+	float: left;
+	margin: -2px 0px;
+	padding: 5px;
+	line-height: 24px;
+	border-right: solid 1px #04a6c7;
+}
+#nav li:first-child {
+	border-left: solid 1px #04a6c7;
+}
+#nav li:hover {
+	background: #78d5fa; /* Support older browsers */
+	/* Background image code from the CSS Gradient Generator @ http://www.css3factory.com/linear-gradients/ */
+background-image: -webkit-gradient(
+	linear,
+	left top,
+	left bottom,
+	color-stop(0, #76cee0),
+	color-stop(0.24, #78d5fa),
+	color-stop(1, #74909c)
+);
+background-image: -o-linear-gradient(bottom, #76cee0 0%, #78d5fa 24%, #74909c 100%);
+background-image: -moz-linear-gradient(bottom, #76cee0 0%, #78d5fa 24%, #74909c 100%);
+background-image: -webkit-linear-gradient(bottom, #76cee0 0%, #78d5fa 24%, #74909c 100%);
+background-image: -ms-linear-gradient(bottom, #76cee0 0%, #78d5fa 24%, #74909c 100%);
+background-image: linear-gradient(to bottom, #76cee0 0%, #78d5fa 24%, #74909c 100%);
+}
+#nav li:active {
+	box-shadow: 0px 0px 3px #fff inset,0px 0px 3px #fff inset,0px 0px 3px #fff inset;
+}
+#nav li.current {
+	background: #00344a;
+}
+
+#nav a,
+#nav li a {
+	display: block;
+	border: none;
+	width: 100%;
+	height: 100%;
+}
+#nav li a:link,
+#nav li a:visited {
+	color: #ccc;
+	text-decoration: none;
+}
+#nav li a:hover {
+	color: #fff;
+}
+#nav li.current a {
+	color: #ddd;
+}
+
+/* Content Area */
+
+#content {
+	margin-top: 3px;
+	float: left;
+	width: 600px;
+	padding: 10px;
+}
+#content a {
+	border-bottom: solid 1px #777;
+}
+
+/* Sidebars */
+
+#sidebar,
+#sidebar2 {
+	padding: 8px;
+}
+#sidebar *:first-child,
+#sidebar2 *:first-child {
+	margin-top: 0;
+}
+#sidebar a,
+#sidebar2 a {
+	border-bottom: solid 1px #777;
+}
+#sidebar {
+	background: #cddaee; /* Set using Faux Columns; keep in case background image fails to load */
+	float: left;
+	width: 178px;
+}
+#sidebar2 {
+	background: #e7edf7; /* Set using Faux Columns; keep in case background image fails to load */
+	float: left;
+	width: 170px;
+}
+.sidebarads {
+	margin: 10px auto 0 auto;
+}
+#sidebar h1, #sidebar2 h1,
+#sidebar h2, #sidebar2 h2,
+#sidebar h3, #sidebar2 h3,
+#sidebar h4, #sidebar2 h4,
+#sidebar h5, #sidebar2 h5,
+#sidebar h6, #sidebar2 h6 {
+	line-height: 1;
+	}
+
+/* Footer */
+
+#footer {
+	padding: 10px;
+	background: #ccc;
+	font-size: 11px;
+}
+
+/* Sitemap (Provided by plugin @ http://get-simple.info/extend/plugin/sitemap/182/ */
+div#sitemap {
+	font: 12px/16px tahoma,sans-serif;
+}
+div#sitemap li {
+	list-style: circle;
+	color: #009;
+}
+
+/* Sharing */
+
+#share-bottom , #share-top {float: right;}
+#share-top a,
+#share-bottom a {border: none;}
+
+/* Forms */
+
+form {
+	margin-top: 12px;
+}
+
+fieldset {
+	border: solid 1px #cddaee;
+	border-radius: 2px;
+	padding: 6px;
+	background: #F6F8FC;
+	margin-bottom: 12px;
+}
+
+legend {
+	padding: 6px;
+	border: solid 1px #cddaee;
+	border-radius: 2px;
+	font-family: sans-serif;
+	background: #EDF2F9;
+	font-size: 140%;
+	font-weight: bold;
+	color: #131425;
+}
+
+/* Special areas */
+
+.left {float: left;}
+.right {float: right;}
+.top {vertical-align: middle;}
+.nodisplay {display: none;}
+
+.breadcrumb {
+	text-align: right;
+	border: solid 1px #cddaee;
+	border-radius: 2px;
+	box-shadow: 3px 3px 6px #e7edf7;
+	padding: 2px 4px;
+	font-size: 11px;
+}
+#index .breadcrumb {
+	display: none;
+}
+
+#refwiz_child_menu {
+	margin: 6px 0;
+	padding: 0 12px 12px 12px;
+	border: solid 1px #cddaee;
+	border-radius: 2px;
+	box-shadow: 3px 3px 6px #e7edf7;
+}
+p#parent {display: none;}
